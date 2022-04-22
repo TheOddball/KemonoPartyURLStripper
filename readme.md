@@ -1,3 +1,2 @@
 # Google Drive link grabber for Kemono.party
-Requires slimerjs.
-Run `getposts.ps1 linkofartist` to start.
+Run `npm i`, configure your slimerjs environment variable, and then `node ./main.js "url of artist" "url of second artist"`
