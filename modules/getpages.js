@@ -1,7 +1,6 @@
 var file = require("fs");
 
 var userInput = [file.read("./user.txt").split(",")];
-console.log(userInput);
 var queue = [];
 
 userInput.forEach(function (url) {
@@ -27,8 +26,6 @@ userInput.forEach(function (url) {
                         } else {
                             var finalPages = 1;
                         }
-
-                        console.log(finalPages);
                         window.callPhantom(finalPages);
                     });
                     resolve(values);

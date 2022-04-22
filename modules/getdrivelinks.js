@@ -22,7 +22,7 @@ posts.forEach(function (url) {
                         var pagearray = []
 
                         for (var i = 0; i < x.length; i++) {
-                            var cleanlink = x[i].innerHTML;
+                            var cleanlink = x[i].innerText;
                             if (/https:\/\/drive\.google\.com.*/g.test(cleanlink)) {
                                 pagearray.push([cleanlink]);
                             }
