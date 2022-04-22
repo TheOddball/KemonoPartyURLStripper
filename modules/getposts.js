@@ -43,5 +43,6 @@ Promise.all(queue).then(function (posts) {
     var tmp = posts.map(a => a.toString()).toString().split(",");
     var result = [...new Set(tmp)];
     file.write("./posts.json", JSON.stringify(result));
+    file.write("./callback2.txt", "true");
     slimer.exit();
 });

@@ -1,6 +1,7 @@
 var file = require("fs");
 
 var userInput = [file.read("./user.txt").split(",")];
+console.log(userInput);
 var queue = [];
 
 userInput.forEach(function (url) {
@@ -56,6 +57,7 @@ Promise.all(queue).then(function (pages) {
     });
 
     file.write("./pages.json", JSON.stringify(pageArray));
+    file.write("./callback1.txt", "true");
     slimer.exit();
 });
 

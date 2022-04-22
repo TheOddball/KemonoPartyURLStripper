@@ -1,3 +1,5 @@
 *.json
 drivedl.ps1
 *.txt
+node_modules
+links*

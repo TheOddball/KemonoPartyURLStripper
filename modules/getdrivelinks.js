@@ -45,5 +45,6 @@ Promise.all(queue).then(function (values) {
     });
     var tmp = filtered.map(a => a.toString()).toString().split(",");
     file.write("./links.json", JSON.stringify(tmp));
+    file.write("./callback3.txt", "true");
     slimer.exit();
 });
